@@ -1,38 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .App {
   text-align: center;
+  /* background-color: rgb(0, 162, 255); */
+  background-image: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-attachment: fixed;
+
+  height: 100vh;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Padding {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Margin {
+  margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Margin */
+.mg-10{
+  margin: 10px;
+}
+
+h1 {
+  font-size: 1em;
+}
+.btn-1 {
+  padding: 0.3em 2em;
+  margin: 0.5em;
+  border: 1px solid whitesmoke;
+  background-color: black;
   color: white;
+  border-radius: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-1:hover {
+  color: black;
+  cursor: pointer;
+  background-color: whitesmoke;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Counter {
+  background-color: #8eb0bc;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ReadInput {
+  border: 1px solid black;
+  padding: 0.5em 10em;
+  background-color: #8eb0bc;
+}
+
+/* Button & Input Text rgb(29, 165, 228); #24a0ed */
+input, textarea{
+  border: 1px solid black;
+  padding: 4px 10px;
+  margin: 4px;
+  transition: 0.5s;
+  border-radius: 4px;
+
+  background-color: rgb(49, 49, 49);
+  color: #ccc;
+  font-size: 13px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+
+}
+
+button{
+  border: 1px solid #24a0ed;
+  padding: 4px;
+  margin: 4px;
+  border-radius: 4px;
+  background-color: #24a0ed;
+  color: #ccc;
+  text-align: center;
+  transition: 0.5s;
+
+  cursor: pointer;
+}
+
+button:focus{
+  background-color: rgb(49, 49, 49);
+  color: #ccc;
+  
+}
+
+button:hover{
+  border: 1px dotted black;
+  transition: 0.5s;
+}
+
+img{
+    width: inherit;
+    height: 250px; /* height of container */
+    object-fit: cover;
 }

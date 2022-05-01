@@ -10,7 +10,10 @@
 
 # production
 /build
-
+/test.html
+/test.js
+/email.html
+/form.html
 # misc
 .DS_Store
 .env.local
