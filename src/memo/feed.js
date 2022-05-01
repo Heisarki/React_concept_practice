@@ -43,7 +43,7 @@ const list = data.map((data, index) => (
     <div style={test}>
       <h1>{data.title}</h1>
       <p1>{data.description}</p1>
-      <a href={data.readMore}>Readmore...</a>
+      <a href={data.readMore}>Readmore..</a>
     </div>
   </div>)
 )
