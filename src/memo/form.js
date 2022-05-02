@@ -1,9 +1,9 @@
 import React from 'react'
 import FormStyle from './form.module.css'
-const main = {
-    display: 'flex',
-    flexDirection: 'column',
-}
+// const main = {
+//     display: 'flex',
+//     flexDirection: 'column',
+// }
 const file = {
   fontSize: '9px',
   cursor: 'pointer'
@@ -23,3 +23,4 @@ export default function Form() {
     </div>
   )
 }
+

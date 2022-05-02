@@ -1,8 +1,8 @@
 import './App.css';
-import Counter from './components/counter';
+import CounterUseEffect from './components/use-state';
 import ReadInput from './components/readInput';
 import Renderlist from './components/renderlist/renderlist';
-import UseEfx from './components/useEfx';
+import UseEfx from './components/user-effect';
 
 import Memo from './memo'
 
@@ -26,7 +26,7 @@ function App() {
 
       
       <div className='Counter'>
-        <Counter />
+        <CounterUseEffect />
       </div>
       
       <div className='UseEfx'>
