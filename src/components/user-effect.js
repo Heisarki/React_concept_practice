@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { up } from '../state/actions/counter'
@@ -14,6 +14,9 @@ export default function UseEfx() {
   console.log(countData)
   console.log(posts)
 
+  useEffect(() => {
+    console.log("from useEffect")
+  },[countData])
   const display = () => {
     posts.map((posts)=>(console.log(posts.id)))
   }
